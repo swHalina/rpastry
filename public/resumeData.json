@@ -1,0 +1,94 @@
+{
+  "main": {
+    "MainName": "Developer",
+    "name": "R Pastry",
+    "occupation": "",
+    "description": "I love creating",
+    "subdescription": "New Builds",
+    "lastdescription": "especially in",
+    "lastinfo": "React Js",
+    "image": "profile_4.png",
+    "bio": "Hello everyone my name is Maria I have always liked to develop in areas that allow me to express all my creativity starting with graphic design to front end development with more than 2 years of experience.",
+    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
+    "email": "dev@msuarez.info",
+    "phone": "",
+    "address": {
+      "street": "",
+      "city": "Victoria de",
+      "state": "Durango",
+      "zip": ""
+    },
+    "website": "https://www.papareact.com/course",
+    "resumedownload": "#about",
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/swHalina",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": "University Utel - Mex",
+        "degree": "Bachelor's Degree, Computer Science",
+        "graduated": "July 2022",
+        "description": "In progress"
+      }
+    ],
+    "work": [
+      {
+        "company": "Accenture",
+        "title": "FrontEnd Developer",
+        "years": "Jun 2022 - Present",
+        "description": "Development of functionalities according to customer requirements in Erps, Ecommerce, CRM."
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "70%"
+      },
+      {
+        "name": "Php",
+        "level": "50%"
+      },
+      {
+        "name": "Git",
+        "level": "70%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "70%"
+      },
+      {
+        "name": "Web Development",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Wordle Clone (React JS)",
+        "category": "",
+        "image": "wordle_clone.png",
+        "url": "http://74.208.182.108:3006/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Sonny is absolutely excellent, his depth of knowledge & his mentorship really meant a lot to us... I would definitely recommend",
+        "user": "Jorge Fouto"
+      },
+      {
+        "text": "Learning with Sonny has been AWESOME, he makes learning React so easy and approachable, you'll finally feel like you know what's going on!",
+        "user": "Adam Curtis"
+      }
+    ]
+  }
+}

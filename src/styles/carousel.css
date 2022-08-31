@@ -1,0 +1,46 @@
+.mainSlider {
+    background-color: transparent;
+    height: 450px;
+    width: auto;
+    /* max-height: 400px; */
+    /* height: 45rem; */
+}
+
+.mainSlide {
+    background-color: green;
+    color: white;
+}
+
+.example {
+    position: relative;
+}
+
+.mainButtons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+}
+
+.leftButton {
+    left: 0;
+}
+
+.rightButton {
+    right: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlidesVisible {
+    display: block;
+}
+
+/* .mySlides {
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    /* background-size: 300px 100px; 
+} */

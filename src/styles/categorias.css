@@ -1,0 +1,43 @@
+.section {
+    margin: 0px;
+    padding: 50px 0px 20px;
+}
+
+.section-header {
+    font-size: 46px;
+    text-transform: uppercase;
+    letter-spacing: 1.69px;
+    color: #140744;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.section-text {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+}
+
+@media (min-width: 992px) {
+
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
