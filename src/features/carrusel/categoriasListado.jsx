@@ -8,7 +8,7 @@ const userSlice = createSlice({
     reducers: {
         addCategorias: (state, action) => {
             const bundle = action.payload;
-            console.log("valor de redux categorias", bundle);
+            console.log("Asi llega de bundle ", bundle);
             state.push(bundle);
         },
     },

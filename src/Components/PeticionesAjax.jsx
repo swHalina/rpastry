@@ -55,8 +55,7 @@ export const PeticionesAjax = () => {
     const makeDispacthCategorias = (x) => {
         console.log("Pasa por aqui")
         return dispatch(
-            addCategorias([
-                { categorias: x }]
+            addCategorias(x
             )
         );
 

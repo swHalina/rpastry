@@ -38,11 +38,12 @@ const CarouselButton = styled.button`
 `;
 
 const Carousel = (props) => {
-    console.log("Llegan props a carrusel", props.images[0]);
+    //console.log("Llegan props a carrusel", props.images[0]);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState();
     const [loaded, setLoaded] = useState(false);
 
+    /* Setting the first image of the array as the selected image. */
     useEffect(() => {
         if (props.autoPlay || !props.showButtons) {
             const interval = setInterval(() => {
@@ -52,6 +53,7 @@ const Carousel = (props) => {
         }
     }, []);
 
+    /* Setting the first image of the array as the selected image. */
     useEffect(() => {
 
         let currentSlider = "";
@@ -67,6 +69,12 @@ const Carousel = (props) => {
 
     }, [props.images])
 
+    /**
+     * "If the selectedIndex is less than the length of the images array, then increment the selectedIndex
+     * by 1, otherwise set the selectedIndex to 0."
+     * 
+     * The nextIndex variable is the value that is used to set the selectedIndex state.
+     */
     const selectNewImage = (index, images, next = true) => {
         console.log(selectedImage);
         setLoaded(false);

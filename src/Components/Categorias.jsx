@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import '../styles/categorias.css';
-import { useSelector, useDispatch } from "react-redux";
 
-const Categorias = () => {
+const Categorias = (props) => {
     // const imagenes = useSelector((state) => state.fichero);
 
     // const check = () => {
@@ -14,11 +13,10 @@ const Categorias = () => {
 
     // }
 
-    // useEffect(() => {
+    useEffect(() => {
+        console.log(props.id, props.cat, props.sabores, props.img);
 
-    //     check();
-
-    // }, [imagenes])
+    }, [props.id, props.cat, props.sabores, props.img])
 
 
     return (
@@ -27,25 +25,24 @@ const Categorias = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <div className="section-header">Galletas</div>
-                            <span className="section-text">Nuestras Galletas estan elaboradas con la mas alta calidad en repostería, debido al cuidado en su elaboración e incorporando una gran variedad de ingredientes, resultado con un amplia gama de galletas para todos los gustos y paladares.</span>
+                            <div className="section-header">{props.cat}</div>
+                            <span className="section-text">{props.des}</span>
                             <br />
                             <br />
                             <ul>
-                                <li>Alfajores</li>
-                                <li>Naranja Arandano</li>
-                                <li>Besos de Nuez</li>
-                                <li>Almendra o Nuez</li>
-                                <li>Danesas</li>
-                                <li>Chispas de Chocolate, Vainilla Coco o M&amp;M</li>
-                                <li>Mantequilla Decoradas</li>
-                                <li>Rellenas o Combinadas</li>
+                                {props.sabores.map((sabor, index) => {
+                                    return (
+                                        <li key={index}>
+                                            {sabor.tipo}
+                                        </li>
+                                    );
+                                })}
                             </ul>
                             <br />
                             <a className="button button-primary section-button" href="/cookies">Ver más</a>
                         </div>
                         <div className="col-md-6">
-                            <img className="section-image" src="https://rsreal.herokuapp.com/assets/galletas1-cd209d66f096f50f53e3d4fe535bb1aeaa52d62b490abb0ef2712a00b49c767c.jpg" />
+                            <img className="section-image" src={props.img} />
                         </div>
                     </div>
                 </div>
