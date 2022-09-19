@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../styles/header.css";
 import Carousel from "./Carousel";
 import { useSelector } from "react-redux";
 
@@ -45,7 +46,7 @@ const Header = (props) => {
                             {listadoDeCategorias.map((categoria, index) => {
                                 return (
                                     <li key={index}>
-                                        <a className="smoothscroll" href="#{categoria.categoria}">
+                                        <a className="smoothscroll" href={'#' + categoria.categoria}>
                                             {categoria.categoria}
                                         </a>
                                     </li>
@@ -55,7 +56,7 @@ const Header = (props) => {
                     </div>
                     <div className="navbarFooter"></div>
                 </nav>
-            </div>
+            </div >
             {cargando === true && (
                 <Carousel images={fetchImagenes} autoPlay={false} showButtons={true} />
             )}

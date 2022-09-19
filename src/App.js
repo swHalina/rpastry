@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Components/Header";
 import Categorias from "./Components/Categorias";
 import { PeticionesAjax } from "./Components/PeticionesAjax";

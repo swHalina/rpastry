@@ -2,17 +2,6 @@ import React, { useEffect } from 'react'
 import '../styles/categorias.css';
 
 const Categorias = (props) => {
-    // const imagenes = useSelector((state) => state.fichero);
-
-    // const check = () => {
-
-    //     setTimeout(() => {
-
-    //         console.log("imagen actual Categoria", imagenes[0][0])
-    //     }, 1000);
-
-    // }
-
     useEffect(() => {
         console.log(props.id, props.cat, props.sabores, props.img);
 
@@ -21,7 +10,7 @@ const Categorias = (props) => {
 
     return (
         <div>
-            <section id="galletas" className="section">
+            <section id={props.cat} className="section">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
@@ -42,7 +31,7 @@ const Categorias = (props) => {
                             <a className="button button-primary section-button" href="/cookies">Ver más</a>
                         </div>
                         <div className="col-md-6">
-                            <img className="section-image" src={props.img} />
+                            <img className="section-image" src={props.img} alt="Sin imagen" />
                         </div>
                     </div>
                 </div>
